@@ -41,12 +41,15 @@ public class Main {
 
                         System.out.println("Adding student...");
                         System.out.println("Enter student name: ");
+
                         String name = scan.nextLine();
 
                         System.out.println("Assign student ID: ");
                         int id = scan.nextInt();
 
                         manager.addStudent(id, name);
+
+                        // manager.loadFromFile();
 
                         manager.writeStudentsToFile();
 
@@ -72,7 +75,7 @@ public class Main {
 
 
                         // den här är långt ifrån klar...
-                    // vad fan ska jag göra här...
+                        // vad fan ska jag göra här...
                     case 3:
                         // Adding a grade to existing student
 
